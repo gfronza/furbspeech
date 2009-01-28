@@ -17,34 +17,7 @@
       	<email>israel.damasio@gmail.com</email>
   	</developer>
   </developers>
-  <ciManagement>
-	<system>continuum</system>
-	<url>http://localhost:8080/continuum</url>
-	<notifiers>
-	    <notifier>
-	      <type>mail</type>
-	      <sendOnError>true</sendOnError>
-	      <sendOnFailure>true</sendOnFailure>
-	      <sendOnSuccess>true</sendOnSuccess>
-	      <sendOnWarning>true</sendOnWarning>
-		      
-	      <configuration>
-	        <address>germano</address>
-	      </configuration>
-	    </notifier>
-	    <notifier>
-	      <type>mail</type>
-	      <sendOnError>true</sendOnError>
-	      <sendOnFailure>true</sendOnFailure>
-	      <sendOnSuccess>true</sendOnSuccess>
-	      <sendOnWarning>true</sendOnWarning>
-		      
-	      <configuration>
-	        <address>israel</address>
-	      </configuration>
-	    </notifier>
-	</notifiers>
-  </ciManagement>
+  
   <packaging>jar</packaging>
   <dependencies>
   	<dependency>
