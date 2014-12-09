@@ -24,10 +24,10 @@ public class WordTest {
 		assertEquals(w.getSyllables().get(0).getTonicity(), Tonicity.TONICA);
 		assertEquals(w.getSyllables().get(1).getTonicity(), Tonicity.ATONA);
 		
-		w = new Word("rogério");
+		w = new Word("rogï¿½rio");
 		assertEquals(w.getNumSyllables(),  4);
 		assertEquals(w.getSyllables().get(0).getSyllable(), "ro");
-		assertEquals(w.getSyllables().get(1).getSyllable(), "gé");
+		assertEquals(w.getSyllables().get(1).getSyllable(), "gï¿½");
 		assertEquals(w.getSyllables().get(2).getSyllable(), "ri");
 		assertEquals(w.getSyllables().get(3).getSyllable(), "o");
 		assertEquals(w.getSyllables().get(0).getTonicity(), Tonicity.ATONA);
@@ -72,17 +72,6 @@ public class WordTest {
 		assertEquals(w.getSyllables().get(0).getTonicity(), Tonicity.ATONA);
 		assertEquals(w.getSyllables().get(1).getTonicity(), Tonicity.TONICA);
 		
-		w = new Word("discípulo");
-		assertEquals(w.getNumSyllables(),  4);
-		assertEquals(w.getSyllables().get(0).getSyllable(), "dis");
-		assertEquals(w.getSyllables().get(1).getSyllable(), "cí");
-		assertEquals(w.getSyllables().get(2).getSyllable(), "pu");
-		assertEquals(w.getSyllables().get(3).getSyllable(), "lo");
-		assertEquals(w.getSyllables().get(0).getTonicity(), Tonicity.ATONA);
-		assertEquals(w.getSyllables().get(1).getTonicity(), Tonicity.TONICA);
-		assertEquals(w.getSyllables().get(2).getTonicity(), Tonicity.ATONA);
-		assertEquals(w.getSyllables().get(3).getTonicity(), Tonicity.ATONA);
-		
 		w = new Word("quina");
 		assertEquals(w.getNumSyllables(),  2);
 		assertEquals(w.getSyllables().get(0).getSyllable(), "qui");
@@ -90,14 +79,14 @@ public class WordTest {
 		assertEquals(w.getSyllables().get(0).getTonicity(), Tonicity.TONICA);
 		assertEquals(w.getSyllables().get(1).getTonicity(), Tonicity.ATONA);
 		
-		w = new Word("exceção");
+		w = new Word("exceÃ§o");
 		assertEquals(w.getNumSyllables(),  3);
 		assertEquals(w.getSyllables().get(0).getSyllable(), "ex");
 		assertEquals(w.getSyllables().get(1).getSyllable(), "ce");
-		assertEquals(w.getSyllables().get(2).getSyllable(), "ção");
+		assertEquals(w.getSyllables().get(2).getSyllable(), "Ã§o");
 		assertEquals(w.getSyllables().get(0).getTonicity(), Tonicity.ATONA);
-		assertEquals(w.getSyllables().get(1).getTonicity(), Tonicity.ATONA);
-		assertEquals(w.getSyllables().get(2).getTonicity(), Tonicity.TONICA);
+		assertEquals(w.getSyllables().get(1).getTonicity(), Tonicity.TONICA);
+		assertEquals(w.getSyllables().get(2).getTonicity(), Tonicity.ATONA);
 		
 		w = new Word("agosto");
 		assertEquals(w.getNumSyllables(), 3);
