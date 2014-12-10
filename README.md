@@ -6,12 +6,12 @@ FurbSpeech is a Java-based API that converts portuguese text into speech. It use
 Usage:
 
 ```java
- 	// basic usage.
- 	new FurbSpeech().text("some text in portuguese language").to().speech();
+// basic usage.
+new FurbSpeech().text("some text in portuguese language").to().speech();
    
- 	// defining the voice
- 	new FurbSpeech().text("some text in portuguese language").withVoice(filePointingToTheVoice).to().speech();
+// defining the voice
+new FurbSpeech().text("some text in portuguese language").withVoice(filePointingToTheVoice).to().speech();
    
- 	// output to WAV file
- 	new FurbSpeech().text("some text in portuguese language").to("tts.wav").speech();
+// output to WAV file
+new FurbSpeech().text("some text in portuguese language").to("tts.wav").speech();
 ```
